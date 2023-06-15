@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%; // 1 rem = 10px
+
+  // Desktop first (max-width) -> Larger media queries on top
+  @include respond(tab-land) {
+    //1rem = 9px
+    font-size: 56.25%;
+  }
+
+  @include respond(tab-port) {
+    //1rem = 8px
+    font-size: 50%;
+  }
+
+  // min-width
+  @include respond(big-desktop) {
+    //1rem = 12px
+    font-size: 75%;
+  }
+}
+
+body {
+  padding: 3rem;
+  box-sizing: border-box;
+
+  @include respond(tab-port) {
+    padding: 0;
+  }
+}
