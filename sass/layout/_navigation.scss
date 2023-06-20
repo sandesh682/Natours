@@ -70,6 +70,10 @@
     @include center;
     list-style: none;
     text-align: center;
+
+    @include respond(phone) {
+      width: 90%;
+    }
   }
 
   &__item {
@@ -94,6 +98,10 @@
       );
       background-size: 220%;
       transition: all 0.4s;
+
+      @include respond(phone) {
+        font-size: 2rem;
+      }
 
       span {
         display: inline-block;

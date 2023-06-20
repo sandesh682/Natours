@@ -760,6 +760,9 @@ body {
   transform: translate(-50%, -50%);
   list-style: none;
   text-align: center; }
+  @media only screen and (max-width: 37.5em) {
+    .navigation__list {
+      width: 90%; } }
 
 .navigation__item {
   margin: 1rem; }
@@ -775,6 +778,9 @@ body {
   background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #fff 50%);
   background-size: 220%;
   transition: all 0.4s; }
+  @media only screen and (max-width: 37.5em) {
+    .navigation__link:link, .navigation__link:visited {
+      font-size: 2rem; } }
   .navigation__link:link span, .navigation__link:visited span {
     display: inline-block;
     margin-right: 1.5rem; }
@@ -927,7 +933,7 @@ body {
 
 .section-about {
   background-color: #f7f7f7;
-  padding: 25rem 0;
+  padding: 30rem 0;
   margin-top: -20vh; }
   @media only screen and (max-width: 56.25em) {
     .section-about {
